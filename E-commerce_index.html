@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>ShopEase | E-Commerce UI</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+<!-- Header -->
+
+<header>
+
+    <nav class="navbar">
+
+        <div class="logo">
+            ShopEase
+        </div>
+
+
+        <div class="search-container">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Search products..."
+            >
+
+        </div>
+
+
+        <button id="cartBtn" class="cart-btn">
+
+            🛒 Cart
+
+            <span id="cartCount">
+                0
+            </span>
+
+        </button>
+
+
+        <button id="menuBtn" class="menu-btn">
+            ☰
+        </button>
+
+    </nav>
+
+</header>
+
+
+<!-- Hero -->
+
+<section class="hero">
+
+    <div>
+
+        <p>NEW COLLECTION</p>
+
+        <h1>
+            Shop Your Favorite Products
+        </h1>
+
+        <p>
+            Discover quality products at affordable prices.
+        </p>
+
+        <a href="#products" class="hero-btn">
+            Shop Now
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- Products -->
+
+<section id="products" class="products-section">
+
+    <h2>
+        Our Products
+    </h2>
+
+
+    <!-- Categories -->
+
+    <div class="categories">
+
+        <button
+            class="category-btn active"
+            data-category="all"
+        >
+            All
+        </button>
+
+        <button
+            class="category-btn"
+            data-category="electronics"
+        >
+            Electronics
+        </button>
+
+        <button
+            class="category-btn"
+            data-category="fashion"
+        >
+            Fashion
+        </button>
+
+        <button
+            class="category-btn"
+            data-category="home"
+        >
+            Home
+        </button>
+
+    </div>
+
+
+    <!-- Product Grid -->
+
+    <div id="productGrid" class="product-grid">
+
+
+        <div
+            class="product-card"
+            data-category="electronics"
+            data-name="Wireless Headphones"
+        >
+
+            <div class="product-image">
+                🎧
+            </div>
+
+            <div class="product-info">
+
+                <span class="category">
+                    Electronics
+                </span>
+
+                <h3>
+                    Wireless Headphones
+                </h3>
+
+                <p>
+                    Comfortable wireless headphones
+                    with clear sound.
+                </p>
+
+                <div class="product-bottom">
+
+                    <strong>
+                        ₹2,499
+                    </strong>
+
+                    <button
+                        class="add-cart"
+                        data-product="Wireless Headphones"
+                        data-price="2499"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div
+            class="product-card"
+            data-category="electronics"
+            data-name="Smart Watch"
+        >
+
+            <div class="product-image">
+                ⌚
+            </div>
+
+            <div class="product-info">
+
+                <span class="category">
+                    Electronics
+                </span>
+
+                <h3>
+                    Smart Watch
+                </h3>
+
+                <p>
+                    Track your daily activities
+                    with a stylish smart watch.
+                </p>
+
+                <div class="product-bottom">
+
+                    <strong>
+                        ₹3,499
+                    </strong>
+
+                    <button
+                        class="add-cart"
+                        data-product="Smart Watch"
+                        data-price="3499"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div
+            class="product-card"
+            data-category="fashion"
+            data-name="Casual Sneakers"
+        >
+
+            <div class="product-image">
+                👟
+            </div>
+
+            <div class="product-info">
+
+                <span class="category">
+                    Fashion
+                </span>
+
+                <h3>
+                    Casual Sneakers
+                </h3>
+
+                <p>
+                    Comfortable sneakers for everyday use.
+                </p>
+
+                <div class="product-bottom">
+
+                    <strong>
+                        ₹1,899
+                    </strong>
+
+                    <button
+                        class="add-cart"
+                        data-product="Casual Sneakers"
+                        data-price="1899"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div
+            class="product-card"
+            data-category="fashion"
+            data-name="Classic Backpack"
+        >
+
+            <div class="product-image">
+                🎒
+            </div>
+
+            <div class="product-info">
+
+                <span class="category">
+                    Fashion
+                </span>
+
+                <h3>
+                    Classic Backpack
+                </h3>
+
+                <p>
+                    Stylish backpack for college and work.
+                </p>
+
+                <div class="product-bottom">
+
+                    <strong>
+                        ₹999
+                    </strong>
+
+                    <button
+                        class="add-cart"
+                        data-product="Classic Backpack"
+                        data-price="999"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div
+            class="product-card"
+            data-category="home"
+            data-name="Desk Lamp"
+        >
+
+            <div class="product-image">
+                💡
+            </div>
+
+            <div class="product-info">
+
+                <span class="category">
+                    Home
+                </span>
+
+                <h3>
+                    Modern Desk Lamp
+                </h3>
+
+                <p>
+                    Minimal desk lamp for your workspace.
+                </p>
+
+                <div class="product-bottom">
+
+                    <strong>
+                        ₹799
+                    </strong>
+
+                    <button
+                        class="add-cart"
+                        data-product="Modern Desk Lamp"
+                        data-price="799"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div
+            class="product-card"
+            data-category="home"
+            data-name="Coffee Mug"
+        >
+
+            <div class="product-image">
+                ☕
+            </div>
+
+            <div class="product-info">
+
+                <span class="category">
+                    Home
+                </span>
+
+                <h3>
+                    Ceramic Coffee Mug
+                </h3>
+
+                <p>
+                    Simple ceramic mug for your favorite drink.
+                </p>
+
+                <div class="product-bottom">
+
+                    <strong>
+                        ₹299
+                    </strong>
+
+                    <button
+                        class="add-cart"
+                        data-product="Ceramic Coffee Mug"
+                        data-price="299"
+                    >
+                        Add to Cart
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <p id="noProducts" class="no-products">
+        No products found.
+    </p>
+
+</section>
+
+
+<!-- Cart Modal -->
+
+<div id="cartModal" class="modal">
+
+    <div class="modal-content">
+
+        <button id="closeCart" class="close-btn">
+            ×
+        </button>
+
+        <h2>
+            Shopping Cart
+        </h2>
+
+        <div id="cartItems">
+
+            <p>
+                Your cart is empty.
+            </p>
+
+        </div>
+
+        <div class="cart-total">
+
+            Total:
+            <strong id="cartTotal">
+                ₹0
+            </strong>
+
+        </div>
+
+        <button id="checkoutBtn" class="checkout-btn">
+            Checkout
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- Footer -->
+
+<footer>
+
+    <h3>ShopEase</h3>
+
+    <p>
+        Simple shopping experience for everyone.
+    </p>
+
+    <p>
+        © 2026 ShopEase
+    </p>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
